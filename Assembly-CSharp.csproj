@@ -66,6 +66,7 @@
     <Compile Include="Assets\LoadAdaLevel.cs" />
     <Compile Include="Assets\LoadBernersLevel.cs" />
     <Compile Include="Assets\SpawnRiddleHintText.cs" />
+    <Compile Include="Assets\LaunchAdaJigsaw.cs" />
     <Compile Include="Assets\LaunchAdaFinal.cs" />
     <Compile Include="Assets\OpenHowTo.cs" />
     <Compile Include="Assets\OpenLevelSelection.cs" />
