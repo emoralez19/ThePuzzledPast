@@ -18,7 +18,7 @@ public class InputHandler : MonoBehaviour
         {
             resultText.text = "Correct!";
             resultText.color = Color.green;
-            hintText.text = "Room Hint: Early programming language named for this person";
+            hintText.text = "Room Hint: Inspired Alan Turing during his work on the first modern computers";
             button.SetActive(true);
         }
         else if ( input.Length < 0 ) 

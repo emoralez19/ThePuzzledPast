@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,11 +10,10 @@ public class movePiece : MonoBehaviour
     public KeyCode returnToInv;
     public string checkPlacement = "";
     public Vector2 invPos;
-    public int remainingPieces = 12;
+    //public int remainingPieces = 12;
+    public event Action PieceSelected;
 
-    //For win status
-    [SerializeField] Text WinText;
-    [SerializeField] Text hintText;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -35,15 +35,10 @@ public class movePiece : MonoBehaviour
         if ((Input.GetKeyDown(placePiece) && (pieceStatus == "pickedup")))
         {
             checkPlacement = "yes";
+            Debug.Log("Placement yes");
         }
 
-        //Yippeee win!!!
-        if(remainingPieces == 0)
-        {
-            WinText.text = "Yay! You solved the puzzle!";
-            WinText.color = Color.green;
-            hintText.text = "Hint: Lovelace";
-        }
+        
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -58,13 +53,14 @@ public class movePiece : MonoBehaviour
             Instantiate(edgeParticles, other.gameObject.transform.position, edgeParticles.rotation);
             checkPlacement = "no";
             GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
-            remainingPieces = remainingPieces- 1;
+            PieceSelected?.Invoke();
         }
 
         if ((other.gameObject.name != gameObject.name) && (checkPlacement == "yes"))
         {
             GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, .5f);
             checkPlacement = "no";
+            Debug.Log("Change checkplacement to no");
         }
     }
 
@@ -74,6 +70,7 @@ public class movePiece : MonoBehaviour
         checkPlacement = "no";
         GetComponent<Renderer>().sortingOrder = 10;
         invPos = transform.position;
+        Debug.Log("Picked up");
     }
 
     void invControl()

@@ -541,7 +541,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 303873133}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2042109544}
+        m_TargetAssemblyTypeName: AdaTransitions, Assembly-CSharp
+        m_MethodName: LoadAdaBio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &303873133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,6 +2225,7 @@ GameObject:
   - component: {fileID: 2042109542}
   - component: {fileID: 2042109541}
   - component: {fileID: 2042109543}
+  - component: {fileID: 2042109544}
   m_Layer: 5
   m_Name: UIManager
   m_TagString: Untagged
@@ -2287,6 +2300,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4daae68e71feef241b31cae439acc36e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2042109544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042109538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fa15ed3fba1de4eaf9e98c22578298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
