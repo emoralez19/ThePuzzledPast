@@ -3090,7 +3090,6 @@ GameObject:
   - component: {fileID: 1104760378}
   - component: {fileID: 1104760379}
   - component: {fileID: 1104760380}
-  - component: {fileID: 1104760381}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3141,19 +3140,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1104760377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ade7f7ad426fd0f48a9866350fcecca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1104760381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104760377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4daae68e71feef241b31cae439acc36e, type: 3}
+  m_Script: {fileID: 11500000, guid: e93dca9a74866b7478bbd851281abf73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1161846312
@@ -4206,8 +4193,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1104760381}
-        m_TargetAssemblyTypeName: LoadAdaLevel, Assembly-CSharp
+      - m_Target: {fileID: 1104760380}
+        m_TargetAssemblyTypeName: SceneTransitions, Assembly-CSharp
         m_MethodName: OpenAdaScene
         m_Mode: 1
         m_Arguments:

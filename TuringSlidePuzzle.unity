@@ -1131,7 +1131,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1693805520}
         m_TargetAssemblyTypeName: SceneTransitions, Assembly-CSharp
-        m_MethodName: OpenAdaScene
+        m_MethodName: LoadTuringNow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2664,7 +2664,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1693805520}
         m_TargetAssemblyTypeName: SceneTransitions, Assembly-CSharp
-        m_MethodName: OpenAdaScene
+        m_MethodName: LoadTuringNow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2807,7 +2807,7 @@ GameObject:
   - component: {fileID: 1930799612}
   - component: {fileID: 1930799611}
   - component: {fileID: 1930799610}
-  - component: {fileID: 1930799613}
+  - component: {fileID: 1930799614}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2889,7 +2889,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1930799613
+--- !u!114 &1930799614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2898,7 +2898,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1930799609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 077818821e6d96e42ac0fc93b97ba245, type: 3}
+  m_Script: {fileID: 11500000, guid: 4517c59b628709749aa4247955c4f389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   emptySpace: {fileID: 1215155041}

@@ -542,8 +542,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2042109544}
-        m_TargetAssemblyTypeName: AdaTransitions, Assembly-CSharp
+      - m_Target: {fileID: 2042109542}
+        m_TargetAssemblyTypeName: SceneTransitions, Assembly-CSharp
         m_MethodName: LoadAdaBio
         m_Mode: 1
         m_Arguments:
@@ -1272,8 +1272,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2042109543}
-        m_TargetAssemblyTypeName: LoadAdaLevel, Assembly-CSharp
+      - m_Target: {fileID: 2042109542}
+        m_TargetAssemblyTypeName: SceneTransitions, Assembly-CSharp
         m_MethodName: OpenAdaScene
         m_Mode: 1
         m_Arguments:
@@ -1824,7 +1824,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2042109542}
-        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneTransitions, Assembly-CSharp
         m_MethodName: QuitGameNow
         m_Mode: 1
         m_Arguments:
@@ -2221,11 +2221,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2042109540}
-  - component: {fileID: 2042109539}
-  - component: {fileID: 2042109542}
   - component: {fileID: 2042109541}
-  - component: {fileID: 2042109543}
-  - component: {fileID: 2042109544}
+  - component: {fileID: 2042109542}
   m_Layer: 5
   m_Name: UIManager
   m_TagString: Untagged
@@ -2233,18 +2230,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2042109539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042109538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ebb9136565b8a14f8a46a6d5a18ad44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &2042109540
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2287,31 +2272,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2042109538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 675964b6d1142b04ab281b4f23c3e87f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2042109543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042109538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4daae68e71feef241b31cae439acc36e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2042109544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042109538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83fa15ed3fba1de4eaf9e98c22578298, type: 3}
+  m_Script: {fileID: 11500000, guid: e93dca9a74866b7478bbd851281abf73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807

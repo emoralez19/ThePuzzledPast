@@ -389,9 +389,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 714850921}
-  - component: {fileID: 714850922}
-  - component: {fileID: 714850924}
   - component: {fileID: 714850923}
+  - component: {fileID: 714850924}
   m_Layer: 0
   m_Name: ButtonManager
   m_TagString: Untagged
@@ -414,18 +413,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &714850922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714850920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ade7f7ad426fd0f48a9866350fcecca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &714850923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,7 +436,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 714850920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 675964b6d1142b04ab281b4f23c3e87f, type: 3}
+  m_Script: {fileID: 11500000, guid: e93dca9a74866b7478bbd851281abf73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &820706263
@@ -812,9 +799,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 714850922}
-        m_TargetAssemblyTypeName: ReturnToPrevious, Assembly-CSharp
-        m_MethodName: ReturnToPreviousScene
+      - m_Target: {fileID: 714850924}
+        m_TargetAssemblyTypeName: SceneTransitions, Assembly-CSharp
+        m_MethodName: LoadTitle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1228,21 +1215,21 @@ MonoBehaviour:
 
     ----------------
 
-    * Use mouse to explore the room
+    - Use mouse to explore the room
 
-    *
+    -
     Interactable objects will glow when hovered over
 
-    * Click on glowing objects
+    - Click on glowing objects
+    to open puzzles
 
-    *
-    Solve each puzzle for hints to complete the room
+    - Solve each puzzle for hints to complete the room
 
-    * Once you have all hints,
-    click the door icon in the bottom right corner
+    -
+    Once you have all hints, click the computer on the desk
 
-    * Answer the name of the
-    person from the hints to successfully complete the level'
+    - Answer the name
+    of the person from the hints to successfully complete the level'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1506,7 +1493,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 714850924}
-        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneTransitions, Assembly-CSharp
         m_MethodName: QuitGameNow
         m_Mode: 1
         m_Arguments:
