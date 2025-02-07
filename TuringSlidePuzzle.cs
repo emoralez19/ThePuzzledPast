@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class JigsawScript : MonoBehaviour
+public class SlidePuzzleScriptScript : MonoBehaviour
 {
     [SerializeField] private Transform emptySpace = null;
     private Camera camera;
@@ -65,7 +65,7 @@ public class JigsawScript : MonoBehaviour
                         Debug.Log("Finished true");
                         button.SetActive(true);
                         winMessage.text = "Puzzle Solved!!";
-                        RoomHint.text = "Room Hint: Ada programming language";
+                        RoomHint.text = "Room Hint: Referred to as the father of the modern day computer";
                         backPanel.SetActive(true);
                     }
                 }
@@ -75,6 +75,7 @@ public class JigsawScript : MonoBehaviour
 
     public void Shuffle()
     {
+        //empty space must be in the last position on the board
         if (emptySpaceIndex != 9)
         {
             var tileOn9LastPos = tiles[9].TargetPosition;

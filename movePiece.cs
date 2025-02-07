@@ -43,6 +43,7 @@ public class movePiece : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
+        // if the piece name matches with it's collider (right place)
         if ((other.gameObject.name == gameObject.name) && (checkPlacement == "yes"))
         {
             other.GetComponent<BoxCollider2D> ().enabled = false;
@@ -55,7 +56,7 @@ public class movePiece : MonoBehaviour
             GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
             PieceSelected?.Invoke();
         }
-
+        // if the piece name is with the wrong collider name
         if ((other.gameObject.name != gameObject.name) && (checkPlacement == "yes"))
         {
             GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, .5f);
