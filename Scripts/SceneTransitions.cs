@@ -56,6 +56,11 @@ public class SceneTransitions : MonoBehaviour
         SceneManager.LoadSceneAsync("Berners-Lee_Level");
     }
 
+    public void LoadConnectingWires()
+    {
+        SceneManager.LoadSceneAsync("ConnectingWires");
+    }
+
     public void LoadGraceLevelNow()
     {
         SceneManager.LoadSceneAsync("GraceH_Level");
