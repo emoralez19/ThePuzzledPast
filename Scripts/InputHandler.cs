@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BernersRiddleHandler : MonoBehaviour
+public class InputHandler : MonoBehaviour
 {
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
@@ -14,14 +14,14 @@ public class BernersRiddleHandler : MonoBehaviour
     {
         string input = inputField.text;
 
-        if ((input.Equals("Virus")) | (input.Equals("virus")))
+        if ((input.Equals("Function")) | (input.Equals("function") ))
         {
             resultText.text = "Correct!";
             resultText.color = Color.green;
-            hintText.text = "Room Hint: Published the first website in 1990";
+            hintText.text = "Room Hint: Inspired Alan Turing during his work on the first modern computers";
             button.SetActive(true);
         }
-        else if (input.Length < 0)
+        else if ( input.Length < 0 ) 
         {
             resultText.text = "Invalid input";
             resultText.color = Color.red;
@@ -31,13 +31,5 @@ public class BernersRiddleHandler : MonoBehaviour
             resultText.text = "Incorrect. Try again.";
             resultText.color = Color.red;
         }
-    }
-
-    [SerializeField] Text RiddleHintText;
-    public GameObject HintButton;
-
-    public void spawnText()
-    {
-        RiddleHintText.text = "Hint: Harmful computer program";
     }
 }
