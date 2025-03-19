@@ -5,41 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitions : MonoBehaviour
 {
-    public void LoadTuringNow()
-    {
-        SceneManager.LoadSceneAsync("Turing_Level");
-    }
 
-    public void LoadTuringRiddle()
-    {
-        SceneManager.LoadSceneAsync("TuringRiddle");
-    }
-
-    public void LoadTuringSlide()
-    {
-        SceneManager.LoadSceneAsync("TuringSlidePuzzle");
-    }
-
-    public void LoadAdaBio()
-    {
-        SceneManager.LoadSceneAsync(9);
-    }
-
-    //load ada 9 puzzle
-    public void LoadAda9()
-    {
-        SceneManager.LoadScene(6);
-    }
-
-    public void LoadAdaFinal()
-    {
-        SceneManager.LoadSceneAsync("AdaFinalAnswer");
-    }
-
-    public void LoadAdaJigsaw()
-    {
-        SceneManager.LoadSceneAsync(5);
-    }
+    //Ada Lovelace
 
     public void LoadAdaRiddle()
     {
@@ -50,16 +17,36 @@ public class SceneTransitions : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(3);
     }
-
-    public void LoadBernersNow()
+    public void LoadAdaJigsaw()
     {
-        SceneManager.LoadSceneAsync("Berners-Lee_Level");
+        SceneManager.LoadSceneAsync(5);
+    }
+    public void LoadAda9()
+    {
+        SceneManager.LoadScene(6);
     }
 
-    public void LoadConnectingWires()
+    public void CloseAdaRiddle()
     {
-        SceneManager.LoadSceneAsync("ConnectingWires");
+        SceneManager.UnloadSceneAsync(4);
     }
+
+    public void LoadAdaFinal()
+    {
+        SceneManager.LoadSceneAsync("AdaFinalAnswer");
+    }
+    public void LoadAdaBio()
+    {
+        SceneManager.LoadSceneAsync(9);
+    }
+
+    public void LoadAdaPipes()
+    {
+        SceneManager.LoadScene(7);
+    }
+
+
+    //Grace Hopper
 
     public void LoadGraceLevelNow()
     {
@@ -68,10 +55,93 @@ public class SceneTransitions : MonoBehaviour
 
     public void LoadGraceRiddle()
     {
-        SceneManager.LoadSceneAsync("GraceRiddle");
+        SceneManager.LoadSceneAsync("GraceRiddle", LoadSceneMode.Additive);
     }
 
-    public void BackHome()
+    public void LoadGraceMemory()
+    {
+        SceneManager.LoadSceneAsync("GraceMemory", LoadSceneMode.Additive);
+    }
+
+    public void LoadGrace9()
+    {
+        SceneManager.LoadSceneAsync("Grace9Puzzle");
+    }
+
+    public void LoadGraceWire()
+    {
+        SceneManager.LoadSceneAsync("GraceWires");
+    }
+
+    public void LoadGraceFinal()
+    {
+        SceneManager.LoadSceneAsync("GraceFinalAnswer");
+    }
+
+    public void LoadGraceBio()
+    {
+        SceneManager.LoadSceneAsync("GraceBio");   
+    }
+
+
+
+    //Alan Turing
+    public void LoadTuringNow()
+    {
+        SceneManager.LoadSceneAsync("Turing_Level");
+    }
+
+    public void LoadTuringRiddle()
+    {
+        SceneManager.LoadSceneAsync("TuringRiddle", LoadSceneMode.Additive);
+    }
+
+    public void LoadTuringSlide()
+    {
+        SceneManager.LoadSceneAsync("TuringSlidePuzzle", LoadSceneMode.Additive);
+    }
+
+
+    //Tim Berners-Lee
+
+    public void LoadBernersNow()
+    {
+        SceneManager.LoadSceneAsync("Berners-Lee_Level");
+    }
+
+
+    public void LoadConnectingWires()
+    {
+        SceneManager.LoadSceneAsync("ConnectingWires", LoadSceneMode.Additive);
+    }
+
+    public void LoadBernersJigsaw()
+    {
+        SceneManager.LoadSceneAsync("BernersJigsaw", LoadSceneMode.Additive);
+    }
+
+    public void LoadBernersRiddle()
+    {
+        SceneManager.LoadSceneAsync("BernersRiddle", LoadSceneMode.Additive);
+    }
+
+    public void LoadBernersPipes()
+    {
+        SceneManager.LoadSceneAsync("BernersPipes");
+    }
+
+    public void LoadBernersFinal()
+    {
+        SceneManager.LoadSceneAsync("BernersFinalAnswer");
+    }
+
+    public void LoadBernersBio()
+    {
+        SceneManager.LoadSceneAsync("BernersBio");
+    }
+
+    // generic
+        public void BackHome()
     {
         SceneManager.LoadSceneAsync(0);
     }
@@ -96,20 +166,13 @@ public class SceneTransitions : MonoBehaviour
         SceneManager.LoadSceneAsync(2);
     }
 
-    public void CloseAdaRiddle()
-    {
-        SceneManager.UnloadSceneAsync(4);
-    }
 
     public void QuitGameNow()
     {
         Application.Quit();
     }
 
-    public void LoadAdaPipes()
-    {
-        SceneManager.LoadScene(7);
-    }
+
 
     public void LoadTitle()
     {

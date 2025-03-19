@@ -1,24 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BernersRiddleHandler : MonoBehaviour
+public class BernersFinalInputHandler : MonoBehaviour
 {
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
-    [SerializeField] Text hintText;
     public GameObject button;
 
-    public void ValidateInput()
+    public void ValidateFinalInput()
     {
         string input = inputField.text;
 
-        if ((input.Equals("Virus")) | (input.Equals("virus")))
+        if ((input.Equals("sir tim berners lee")) | (input.Equals("Sir Tim Berners-Lee")) | (input.Equals("sir tim berners-lee")) | (input.Equals("TimBL")) | (input.Equals("tim bl")))
         {
             resultText.text = "Correct!";
             resultText.color = Color.green;
-            hintText.text = "Room Hint: Published the first website in 1990";
             button.SetActive(true);
         }
         else if (input.Length < 0)
@@ -31,13 +30,5 @@ public class BernersRiddleHandler : MonoBehaviour
             resultText.text = "Incorrect. Try again.";
             resultText.color = Color.red;
         }
-    }
-
-    [SerializeField] Text RiddleHintText;
-    public GameObject HintButton;
-
-    public void spawnText()
-    {
-        RiddleHintText.text = "Hint: Harmful computer program";
     }
 }
