@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using TMPro;
 
 public class WireCount : MonoBehaviour
 {
     public int count;
-    public GameObject winText;
+    public TextMeshProUGUI winText;
+    public TextMeshProUGUI RoomHint;
     private int onCount = 0;
     static public WireCount Instance;
 
@@ -21,7 +23,9 @@ public class WireCount : MonoBehaviour
         onCount = onCount + points;
         if (onCount == count)
         {
-            winText.SetActive(true);
+            winText.text = "Puzzle Solved!!";
+            RoomHint.text = "Room Hint: Known as the inventor of the HTML markup language," +
+                            "the URL system, and HTTP";
         }
     }
     

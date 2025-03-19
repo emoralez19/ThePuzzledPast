@@ -18,7 +18,7 @@ public class BernersRiddleHandler : MonoBehaviour
         {
             resultText.text = "Correct!";
             resultText.color = Color.green;
-            hintText.text = "Room Hint: Published the first website";
+            hintText.text = "Room Hint: Published the first website in 1990";
             button.SetActive(true);
         }
         else if (input.Length < 0)
