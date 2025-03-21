@@ -98,7 +98,27 @@ public class SceneTransitions : MonoBehaviour
 
     public void LoadTuringSlide()
     {
-        SceneManager.LoadSceneAsync("TuringSlidePuzzle", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("TuringSlidePuzzle");
+    }
+
+    public void LoadTuringJigsaw()
+    {
+        SceneManager.LoadSceneAsync("TuringJigsaw");
+    }
+
+    public void LoadTuringExtra()
+    {
+
+    }
+
+    public void LoadTuringFinal()
+    {
+        SceneManager.LoadSceneAsync("TuringFinalAnswer");
+    }
+
+    public void LoadTuringBio()
+    {
+        SceneManager.LoadSceneAsync("TuringBio");
     }
 
 
@@ -112,12 +132,12 @@ public class SceneTransitions : MonoBehaviour
 
     public void LoadConnectingWires()
     {
-        SceneManager.LoadSceneAsync("ConnectingWires", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("ConnectingWires");
     }
 
     public void LoadBernersJigsaw()
     {
-        SceneManager.LoadSceneAsync("BernersJigsaw", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("BernersJigsaw");
     }
 
     public void LoadBernersRiddle()
