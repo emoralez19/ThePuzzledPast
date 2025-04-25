@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MemoryController : MonoBehaviour
+public class TuringMemoryController : MonoBehaviour
 {
-    [SerializeField] MemoryCard cardPrefab;
+    [SerializeField] TuringMemoryCard cardPrefab;
     [SerializeField] Transform cardContainer;
     [SerializeField] Sprite[] sprites;
     private List<Sprite> pairs;
-    MemoryCard firstSelected;
-    MemoryCard secondSelected;
+    TuringMemoryCard firstSelected;
+    TuringMemoryCard secondSelected;
     int matchCounts;
     [SerializeField] Text winText;
     [SerializeField] Text RoomHint;
@@ -39,14 +39,14 @@ public class MemoryController : MonoBehaviour
     {
         for (int i = 0; i < pairs.Count; i++)
         {
-            MemoryCard card = Instantiate(cardPrefab, cardContainer);
+            TuringMemoryCard card = Instantiate(cardPrefab, cardContainer);
             card.SetIconSprite(pairs[i]);
             card.controller = this;
         }
     }
 
 
-    public void SetSelected(MemoryCard card)
+    public void SetSelected(TuringMemoryCard card)
     {
         if (card.isSelected == false)
         {
@@ -70,7 +70,7 @@ public class MemoryController : MonoBehaviour
     }
 
 
-    IEnumerator CheckMatch(MemoryCard a, MemoryCard b)
+    IEnumerator CheckMatch(TuringMemoryCard a, TuringMemoryCard b)
     {
         yield return new WaitForSeconds(0.3f);
         if (a.visibleIcon == b.visibleIcon)
@@ -81,7 +81,7 @@ public class MemoryController : MonoBehaviour
             {
                 //Yay win!!
                 winText.text = "Yay! Minigame Complete!!";
-                RoomHint.text = "Room Hint: This person pioneered the idea of automatic programming";
+                RoomHint.text = "Room Hint: Alan";
             }
         }
         else

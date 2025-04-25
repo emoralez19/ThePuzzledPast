@@ -106,9 +106,9 @@ public class SceneTransitions : MonoBehaviour
         SceneManager.LoadSceneAsync("TuringJigsaw");
     }
 
-    public void LoadTuringExtra()
+    public void LoadTuringMemory()
     {
-
+        SceneManager.LoadSceneAsync("TuringMemory", LoadSceneMode.Additive);
     }
 
     public void LoadTuringFinal()
@@ -186,13 +186,10 @@ public class SceneTransitions : MonoBehaviour
         SceneManager.LoadSceneAsync(2);
     }
 
-
     public void QuitGameNow()
     {
         Application.Quit();
     }
-
-
 
     public void LoadTitle()
     {
