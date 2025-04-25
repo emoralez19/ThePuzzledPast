@@ -1321,8 +1321,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128434209}
-        m_TargetAssemblyTypeName: SpawnRiddleHintText, Assembly-CSharp
+      - m_Target: {fileID: 884924611}
+        m_TargetAssemblyTypeName: GraceRiddleHandler, Assembly-CSharp
         m_MethodName: spawnText
         m_Mode: 1
         m_Arguments:
